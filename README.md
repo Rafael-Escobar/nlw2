@@ -8,7 +8,7 @@
   <img alt="design do projeto" width="650px" src="./print_screen/screenshot.jpg" />
 <p>
 
-## :about: Sobre
+## Sobre
 
 **Proffy** é uma plataforma onde professores independentes informam suas disciplinas, horários disponíveis e valores, para que alunos possam encontrar a melhor opção que se enquadre dentro de seu orçamento e disponibilidade de horário.
   
