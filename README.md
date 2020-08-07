@@ -13,13 +13,14 @@
 **Proffy** é uma plataforma onde professores independentes informam suas disciplinas, horários disponíveis e valores, para que alunos possam encontrar a melhor opção que se enquadre dentro de seu orçamento e disponibilidade de horário.
   
 
-## Mentores
+## Mentor
   
 O bootcamp **Level Week #2** foi ministrado por [Diego Fernades](https://github.com/diego3g) da [Rocketseat](https://rocketseat.com.br/), o conteúdo e conhecimento foi disponibilizado de forma gratuíta. 
 
-[Layout](https://www.notion.so/Layout-Proffy-3d5f45f54ec54ef9b2103565b7cce4e1)
-[Preparo do Ambiente de Desenvolvimento](https://www.notion.so/Configurando-Ambiente-NLW-98a471ad3cb6448284b8ceed31c45767)
-[Desafio](https://www.notion.so/Layout-Proffy-3d5f45f54ec54ef9b2103565b7cce4e1)
+### Material de suporte
+- [Layout](https://www.notion.so/Layout-Proffy-3d5f45f54ec54ef9b2103565b7cce4e1)
+- [Preparo do Ambiente de Desenvolvimento](https://www.notion.so/Configurando-Ambiente-NLW-98a471ad3cb6448284b8ceed31c45767)
+- [Desafio](https://www.notion.so/Layout-Proffy-3d5f45f54ec54ef9b2103565b7cce4e1)
 
 ## Linguagens, frameworks e ferramentas
 
