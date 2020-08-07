@@ -3,12 +3,6 @@
     <br>Next Level Week #2<br/>
 </h1>
 
-<p align="center">
-  <a href="#about">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#mentor">Mentores</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#languages">Linguagens, frameworks e ferramentas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#run">Como Executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-</p>
 
 <p align="center">
   <img alt="design do projeto" width="650px" src="./print_screen/screenshot.jpg" />
@@ -19,7 +13,7 @@
 **Proffy** é uma plataforma onde professores independentes informam suas disciplinas, horários disponíveis e valores, para que alunos possam encontrar a melhor opção que se enquadre dentro de seu orçamento e disponibilidade de horário.
   
 
-## :mentor: Mentores
+## Mentores
   
 O bootcamp **Level Week #2** foi ministrado por [Diego Fernades](https://github.com/diego3g) da [Rocketseat](https://rocketseat.com.br/), o conteúdo e conhecimento foi disponibilizado de forma gratuíta. 
 
@@ -27,7 +21,7 @@ O bootcamp **Level Week #2** foi ministrado por [Diego Fernades](https://github.
 [Preparo do Ambiente de Desenvolvimento](https://www.notion.so/Configurando-Ambiente-NLW-98a471ad3cb6448284b8ceed31c45767)
 [Desafio](https://www.notion.so/Layout-Proffy-3d5f45f54ec54ef9b2103565b7cce4e1)
 
-## :languages: Linguagens, frameworks e ferramentas
+## Linguagens, frameworks e ferramentas
 
 -  [Node.js](https://nodejs.org/en/)
 -  [Express](https://expressjs.com/)
@@ -38,7 +32,7 @@ O bootcamp **Level Week #2** foi ministrado por [Diego Fernades](https://github.
 -  [Expo](https://expo.io/)
 -  [SQLite](https://www.sqlite.org/index.html)
 
-## :run: Executando o projeto
+## Executando o projeto
 
 1. Clone do repositório:
 
