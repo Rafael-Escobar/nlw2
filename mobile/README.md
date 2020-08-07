@@ -1,11 +1,6 @@
 # Funcionalidades
 
-## Conexões
-
-- Rota para listar todas as conexões realizadas;
-- Rota para criar uma nova conexão;
-
-## Aulas
+## Estudar
 
 - Rota para criar uma aula
 - Rota para listar aulas;
@@ -14,10 +9,15 @@
         - Dia da Semana
         - Horário
 
+## Dar aular
+
+- Direcionar para cadastro na interface WEB;
+
 ## :languages: Linguagens, frameworks e ferramentas
 
 -  [Node.js](https://nodejs.org/en/)
--  [Express](https://expressjs.com/)
 -  [axios](https://github.com/axios/axios)
 -  [Typescript](https://www.typescriptlang.org/)
--  [SQLite](https://www.sqlite.org/index.html)
+-  [ReactJS](https://reactjs.org/)
+-  [React Native](http://facebook.github.io/react-native/)
+-  [Expo](https://expo.io/)
