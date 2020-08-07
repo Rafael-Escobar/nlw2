@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { RectButton } from 'react-native-gesture-handler'
 import { View, Image, Text, } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
-import styles from './styles';
-import api from '../../services/api';
+import styles from './styles'
+import api from '../../services/api'
 
 import landingImg from '../../assets/images/landing.png'
 import studyIcon from '../../assets/images/icons/study.png'
@@ -12,7 +12,7 @@ import heartIcon from '../../assets/images/icons/heart.png'
 
 function Landing() {
 
-    const { navigate } = useNavigation();
+    const { navigate } = useNavigation()
 
     const [totalConnections, setTotalConnections] = useState(0)
 
@@ -25,11 +25,11 @@ function Landing() {
     }, [])
 
     function handleNavigateToGiveClassesPage() {
-        navigate('GiveClasses');
+        navigate('GiveClasses')
     }
 
     function handleNavigateToStudyPage() {
-        navigate('Study');
+        navigate('Study')
     }
 
     return(

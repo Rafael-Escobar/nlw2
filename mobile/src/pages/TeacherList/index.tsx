@@ -1,48 +1,48 @@
-import React, { useState } from 'react';
-import { View, Text, ScrollView, TextInput } from 'react-native';
-import { Feather } from '@expo/vector-icons';
-import { BorderlessButton, RectButton } from 'react-native-gesture-handler';
-import AsyncStorage from '@react-native-community/async-storage';
-import { useFocusEffect } from '@react-navigation/native';
+import React, { useState } from 'react'
+import { View, Text, ScrollView, TextInput } from 'react-native'
+import { Feather } from '@expo/vector-icons'
+import { BorderlessButton, RectButton } from 'react-native-gesture-handler'
+import AsyncStorage from '@react-native-community/async-storage'
+import { useFocusEffect } from '@react-navigation/native'
 
-import api from '../../services/api';
+import api from '../../services/api'
 
-import PageHeader from '../../components/PageHeader';
-import TeacherItem, { Teacher } from '../../components/TeacherItem';
+import PageHeader from '../../components/PageHeader'
+import TeacherItem, { Teacher } from '../../components/TeacherItem'
 
-import styles from './styles';
+import styles from './styles'
 
 function TeacherList() {
-    const [isFiltersVisible, setIsFiltersVisible] = useState(false);
-    const [favorites, setFavorites] = useState<number[]>([]);
+    const [isFiltersVisible, setIsFiltersVisible] = useState(false)
+    const [favorites, setFavorites] = useState<number[]>([])
 
-    const [subject, setSubject] = useState('');
-    const [weekDay, setWeekDay] = useState('');
-    const [time, setTime] = useState('');
+    const [subject, setSubject] = useState('')
+    const [weekDay, setWeekDay] = useState('')
+    const [time, setTime] = useState('')
 
-    const [teachers, setTeachers] = useState([]);
+    const [teachers, setTeachers] = useState([])
 
     function loadFavorites() {
         AsyncStorage.getItem('favorites').then(response => {
             if (response) {
-                const favoritedTeachers = JSON.parse(response);
+                const favoritedTeachers = JSON.parse(response)
                 const favoritedTeachersIds = favoritedTeachers.map((teacher: Teacher) => {
                     return teacher.id
-                });
+                })
 
-                setFavorites(favoritedTeachersIds);
+                setFavorites(favoritedTeachersIds)
             }
-        });
+        })
     }
 
     useFocusEffect(
         React.useCallback(() => {
-            loadFavorites();
+            loadFavorites()
         }, [])
-    );
+    )
 
     function handleToggleFiltersVisible() {
-        setIsFiltersVisible(!isFiltersVisible);
+        setIsFiltersVisible(!isFiltersVisible)
     }
 
     async function handleFiltersSubmit() {
@@ -54,7 +54,7 @@ function TeacherList() {
                 week_day: weekDay,
                 time,
             }
-        });
+        })
 
         setIsFiltersVisible(false)
         setTeachers(response.data)
