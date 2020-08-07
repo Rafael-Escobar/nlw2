@@ -1,32 +1,52 @@
 import React from 'react';
 import './style.css'
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg'
+import api from '../../services/Api';
 
-function TeacherItem() {
+export interface Teacher {
+    id: number;
+    avatar: string;
+    bio: string;
+    cost: number;
+    name: string;
+    subject: string;
+    whatsapp: string;
+}
+
+interface TeacherItemProps {
+    teacher: Teacher;
+}
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
+
+    function createNewConnection() {
+        api.post('/connections', {
+            user_id: teacher.id
+        })
+    }
+    
     return (
         <article className="teacher-item">
             <header>
-                <img src="https://avatars3.githubusercontent.com/u/5831946?s=460&u=ff530a944803789c0ea612dc841d1aa46ec0b7c8&v=4" alt="" />
+                <img src={teacher.avatar} alt={teacher.name} />
                 <div>
-                    <strong>Rafael Escobar</strong>
-                    <span>Biologia</span>
+                    <strong>{teacher.name}</strong>
+                    <span>{teacher.subject}</span>
                 </div>
             </header>
-            <p>
-                bacharel em ciência da computação pela UNIOESTE. Atualmente exerço o papel de gerente de projetos júnior, coordenando equipe, levantamento de backlog, análise, integração e follow-up.
-                Também atuo como desenvolvedor backend, onde trabalho com PHP, Node.js, base de dados MySQL e um pouco de Oracle. Em minha jornada já participei de pesquisa e desenvolvimento no laboratório
-                CEASB de segurança de barragens, situado no parque tecnológico de Itaipu, neste projeto atuei como cientista e pesquisador no desenvolvimento de um protótipo de sistema de detecção de
-                falhas utilizando estatística multivariada. Também realizei trabalho freelancer, como analista e desenvolvedor para IMS Desenvolvimento de software, em um projeto de diagnóstico social.
-                    </p>
+            <p>{teacher.bio}</p>
             <footer>
                 <p>
                     Preço/hora
-                            <strong>R$ 100,00</strong>
+                    <strong>R$ {teacher.cost}</strong>
                 </p>
-                <button type="button">
+                <a 
+                    target="_blank" 
+                    onClick={createNewConnection} 
+                    href={`https://wa.me/${teacher.whatsapp}`}
+                >
                     <img src={whatsappIcon} alt="Whatsapp" />
-                            Entrar em contato
-                        </button>
+                    Entrar em contato
+                </a>
 
             </footer>
         </article>
