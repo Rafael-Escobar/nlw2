@@ -14,7 +14,7 @@
         - Dia da Semana
         - Horário
 
-## :languages: Linguagens, frameworks e ferramentas
+## Linguagens, frameworks e ferramentas
 
 -  [Node.js](https://nodejs.org/en/)
 -  [Express](https://expressjs.com/)

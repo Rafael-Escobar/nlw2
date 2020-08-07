@@ -13,7 +13,7 @@
 
 - Direcionar para cadastro na interface WEB;
 
-## :languages: Linguagens, frameworks e ferramentas
+## Linguagens, frameworks e ferramentas
 
 -  [Node.js](https://nodejs.org/en/)
 -  [axios](https://github.com/axios/axios)
